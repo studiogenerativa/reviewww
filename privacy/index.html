@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reviewww — Privacy Policy</title>
+    <meta name="description" content="Privacy policy for the Reviewww Chrome extension. No servers, no accounts, no analytics." />
+    <link rel="icon" href="../icon-128.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <img src="../icon-128.png" alt="" />
+        <a class="brand" href="../">Reviewww<span>. Comment. Improve.</span></a>
+      </header>
+
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: 2026-09-24</p>
+
+      <p>
+        Reviewww is a Chrome extension for leaving review comments on web pages and exporting them as text. This policy
+        explains what the extension stores and what it does not do.
+      </p>
+
+      <div class="card">
+        <h2 style="margin-top: 0">Summary</h2>
+        <p>
+          Reviewww has no servers, no accounts and no analytics. Everything you create stays in your browser, on your
+          device. We never receive it.
+        </p>
+      </div>
+
+      <h2>What the extension stores</h2>
+      <p>
+        All data is saved with <code>chrome.storage.local</code>, which lives inside your Chrome profile on your
+        computer:
+      </p>
+      <ul>
+        <li>
+          <strong>Reviews</strong>: the name you give them, the site origin (for example <code>https://example.com</code>),
+          and the participant names you type.
+        </li>
+        <li>
+          <strong>Comments</strong>: the text you write, replies, status, the page URL and path, the viewport size, a CSS
+          selector and a short text excerpt of the element you clicked.
+        </li>
+        <li>
+          <strong>Screenshots</strong>: one JPEG image of the visible part of the page, taken at the moment you post a
+          comment, so you can recognize the element later.
+        </li>
+        <li>
+          <strong>Preferences</strong>: toolbar position, collapsed state, whether pins are visible, the current mode and
+          the active participant.
+        </li>
+      </ul>
+
+      <h2>What the extension does not do</h2>
+      <ul>
+        <li>It does not send any of this data to us or to any third party.</li>
+        <li>It does not use analytics, tracking, advertising or fingerprinting.</li>
+        <li>
+          It does not read or store page content on its own. A comment, its element excerpt and its screenshot are only
+          saved when you post a comment.
+        </li>
+        <li>It does not load or execute remote code.</li>
+      </ul>
+
+      <h2>Permissions and why they are needed</h2>
+      <ul>
+        <li>
+          <strong>Access to all sites (<code>&lt;all_urls&gt;</code>)</strong>: you decide which site to review, including
+          <code>localhost</code>, so the extension must be able to show its toolbar and pins on any page. It only becomes
+          active on the site of the review you started. This access is also what lets it read the address of the current
+          tab when you start a review and open the right page when you use “Continue reviewww” or “View on page”. It does
+          not request the broader <code>tabs</code> permission and never reads your browsing history.
+        </li>
+        <li><strong><code>storage</code> and <code>unlimitedStorage</code></strong>: to save reviews, comments and screenshots locally.</li>
+        <li><strong><code>scripting</code></strong>: to show the toolbar on a tab that was already open before the extension was installed or updated.</li>
+        <li><strong>Screenshot capture</strong>: used only at the moment you post a comment or re-pin one.</li>
+      </ul>
+
+      <h2>Sharing</h2>
+      <p>
+        Data leaves your browser only when you do it yourself: by copying a comment or prompt to the clipboard, or by
+        downloading the exported <code>.txt</code> file. What you do with that text afterwards is up to you.
+      </p>
+
+      <h2>Retention and deletion</h2>
+      <p>
+        Data stays until you delete it. You can delete a single comment, delete a whole review from the extension, or
+        remove the extension from Chrome, which erases all of its stored data.
+      </p>
+
+      <h2>Children</h2>
+      <p>Reviewww is a professional tool and is not directed at children.</p>
+
+      <h2>Changes</h2>
+      <p>If this policy changes, the new version will be published at this same address with a new date.</p>
+
+      <h2>Contact</h2>
+      <p>
+        Reviewww is made by Studio Generativa.<br />
+        Questions: <strong><a href="mailto:studiogenerativa@gmail.com">studiogenerativa@gmail.com</a></strong>
+      </p>
+
+      <footer><a href="../">← Back to Reviewww</a></footer>
+    </div>
+  </body>
+</html>
